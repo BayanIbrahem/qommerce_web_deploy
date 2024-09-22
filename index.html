@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      If you are serving your web app in a path other than the root, change the
+      href value below to reflect the base path you are serving from.
+
+      The path provided below has to start and end with a slash "/" in order for
+      it to work correctly.
+
+      For more details:
+      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+      This is a placeholder for base href that will be replaced by the value of
+      the `--base-href` argument provided to `flutter build`.
+    -->
+
+<!--    for local build-->
+    <base href="/">
+
+<!--    for remote deploy-->
+<!--        <base href="./">-->
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="Ecommerce app for android ios and web">
+    <meta name="google-signin-client_id" content="740724089815-kraightjj4588q6jtg6134r4uil8c9t3.apps.googleusercontent.com">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="qommerce">
+    <link rel="apple-touch-icon" href="./icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+
+    <title>qommerce</title>
+    <link rel="manifest" href="./manifest.json">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcQi3cpkjHJ0Woqg9JkRBFNAY5Gf_jw4Y"></script>
+    <script src="./flutter.js" defer></script>
+</head>
+<body>
+<script src="./flutter_bootstrap.js" async></script>
+<script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js" defer></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyD8_954J3e3O6_h1g16OcIzdYNODViFD3s",
+        authDomain: "qommerce.firebaseapp.com",
+        databaseURL: "https://qommerce-default-rtdb.firebaseio.com",
+        projectId: "qommerce",
+        storageBucket: "qommerce.appspot.com",
+        messagingSenderId: "740724089815",
+        appId: "1:740724089815:web:d1ce1a087ad8d1d961e192",
+        measurementId: "G-Q377JFTN8Q"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
